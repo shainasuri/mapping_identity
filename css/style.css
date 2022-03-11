@@ -1,0 +1,146 @@
+* {box-sizing: border-box;}
+
+
+html {
+    background: linear-gradient(145deg, #ffffff, #242424, #e4e4e4, #8a8a8a);
+    animation: gradient 25s ease infinite;
+    background-size: 400% 400%;
+    height: 100vh;
+    width: 100vw;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+body {
+    color: #1f1f1f;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.2rem;
+    text-transform: capitalize;
+}
+
+a {
+    text-decoration: none;
+    color: #1f1f1f;
+}
+
+span {
+    cursor: pointer;
+    /* font-size: 3vh; */
+}
+
+.cursor {
+    background: url('../paths/Asset\ 2.svg');
+    height: 100px;
+    width: 100px;
+    /* border: 2px solid blue; */
+    position: absolute;
+    z-index: 5;
+}
+
+#main-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+}
+ 
+#container-1 {
+    align-items: center;
+    /* border: 1px solid rgb(247, 237, 224); */
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 50%;
+    /* animation: rotate 10s infinite; */
+}
+
+#header {
+    animation: rotate 30s infinite;
+    height: 25vh;
+    width: 25vh; 
+    position: absolute;
+    margin: 6vh 0 0 8vh;
+}
+@keyframes rotate {
+    from {
+      transform: rotate(360deg);
+    }
+   to{
+      transform: rotate(0deg);
+    }
+}
+
+
+#container-1 >img {
+    width: 8vh;
+    height: 8vh;
+}
+
+#layer-1 {
+    position: absolute;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.7rem;
+    letter-spacing: 0.05rem;
+    /* font-weight: 600; */
+    z-index: 2;
+}
+
+/* #layer-1 > div {
+    background-color: #1f1f1f27;
+} */
+
+.layers > div{
+    font-size: 0.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.02rem;
+}
+
+.layers-2 {
+    font-size: 0.45rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.02rem;
+}
+
+
+#layer-2-identity {
+    position: absolute;
+    z-index: 4;
+}
+
+#layer-3-photography {
+    position: absolute;
+    z-index: 4;
+}
+
+#layer-4-technology {
+    position: absolute;
+    z-index: 4;
+}
+
+#layer-5-design {
+    position: absolute;
+    z-index: 4;
+}
+
+#layer-6-research {
+    position: absolute;
+    z-index: 4;
+}
